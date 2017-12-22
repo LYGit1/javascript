@@ -29,6 +29,7 @@
   		var text= prompt('输入提示信息', '默认值');//window.prompt
   		var textNode = document.createTextNode(text);
   	  	document.body.appendChild(textNode);
+  	  	clearTimeout();//清除定时器
   	};
   	setTimeout(returnMsg, 1000);//window.setTimeout
   	
@@ -48,5 +49,6 @@
   	for (var i=0;i<plus.length;i++){
   		document.write(plus[i]+'<br/>');
   	}
+  	//print(); 打印网页
 </script>
 </html>
