@@ -1,8 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <base href="<%=basePath%>">
-    
     <title>测试内置对象</title>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -17,9 +15,17 @@
   <body>
   	<button onclick="toDomTest()">DOM</button>
   	<button onclick="bom()">BOM</button>
+  	<button onclick="totab()">tab</button>
+  	<button onclick="tonav()">nav</button>
   </body>
-  <!-- 测试内置对象 -->
 	<script type="text/javascript">
+	function tonav() {
+		location = './nav.html';
+	}
+	function totab(){
+		location = './tabTest.html';
+	}
+
 	function toDomTest(){
 		window.location="./domTest.html";
 	}

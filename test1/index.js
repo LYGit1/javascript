@@ -14,6 +14,16 @@ hello.get('/bomTest.html',function(req,res){
 	res.sendFile(__dirname+'/bomTest.html');
 });
 
+hello.get('/tabTest.html',function(req,res){
+	res.sendFile(__dirname+'/tabTest.html');
+});
+
+hello.get('/nav.html',function(req,res) {
+	res.sendFile(__dirname+'/nav1.html');
+});
+
+hello.use(express.static(__dirname));
+
 hello.listen(8080,function(){
 	console.log('port 8080 is running');
 	});	

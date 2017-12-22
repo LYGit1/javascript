@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>tab特效</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			 li{
+			  margin-left: 10px;
+			  float: left;
+			  width: 10%;
+			 }
+			 #tabNav{
+			 	display: block;
+			 	height: 10%;
+			 }
+			 #tab{
+			 	display: block;
+			 	width: 90%;
+			 	height: 10%;
+			 	border: solid 1px;
+			 }
+			 #tab2{
+			 	display: none;
+			 }
+			 #tab3{
+			 	display: none;
+			 }
+			 #tab4{
+			 	display: none;
+			 }
+		</style>
+	</head>
+	<body>
+		<body>
+		 <div id="tanContainer">
+		  <div id="tabNav">
+		  <ul>
+		   <li onclick="tab('tab1')">标题一</li>
+		   <li onclick="tab('tab2')">标题二</li>
+		   <li onclick="tab('tab3')">标题三</li>
+		   <li onclick="tab('tab4')">标题四</li>
+		  </ul>
+		  </div>
+		  <div id="tab">
+		   <div id="tab1">内容一</div>
+		  <div id="tab2">内容二</div>
+		   <div id="tab3">内容三</div>
+		  <div id="tab4">内容四</div>
+		  </div>
+		 </div>
+	</body>
+	<script type="text/javascript">
+		 function tab(pid){
+		  var tabs=new Array("tab1","tab2","tab3","tab4");
+		  for(var i=0;i<tabs.length;i++){
+		   if(tabs[i]==pid){
+		    document.getElementById(tabs[i]).style.display="block";
+		  }else{
+		    document.getElementById(tabs[i]).style.display="none";
+		  }
+		  }
+		 }
+	</script>
+</html>
