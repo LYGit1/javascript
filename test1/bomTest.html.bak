@@ -36,7 +36,6 @@
   		history.back();//window.history
   		//window.history.go(-1);
   	}
-  	//都可以去掉window
   	document.write('历史页面数：'+window.history.length+'<br/>');
   	document.write('浏览器代码'+window.navigator.appCodeName+'<br/>');
   	document.write('浏览器'+window.navigator.appName+'<br/>');
